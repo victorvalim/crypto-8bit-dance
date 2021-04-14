@@ -1,7 +1,6 @@
 import userActions from './userActions';
 
 const allActions = {
-
   userActions,
 };
 

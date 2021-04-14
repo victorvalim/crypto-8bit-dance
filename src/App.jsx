@@ -1,22 +1,24 @@
 /* eslint-disable react/react-in-jsx-scope */
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux';
+import allActions from './actions';
+
 import './App.css';
+import CryptoGif from './components/CryptoGif';
 
 function App() {
+  const dispatch = useDispatch();
+  // eslint-disable-next-line no-unused-vars
+  const [test, setTest] = useState('CRIOU');
+  useEffect(() => {
+    setInterval(() => dispatch(allActions.userActions.fetchAPI()), 10000);
+    return clearInterval();
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <CryptoGif />
+    </>
   );
 }
 
