@@ -1,7 +1,7 @@
 const INITIAL_STATE = {
   time: null,
   bpi: {
-    USD: null,
+    USD: 0,
     GBP: null,
     EUR: null,
 

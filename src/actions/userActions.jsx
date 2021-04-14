@@ -15,7 +15,6 @@ const apiResponse = (payload) => {
 }
 const fetchAPI = () => async (dispatch) => {
 const fetchAPIresponse = await (await fetch('https://api.coindesk.com/v1/bpi/currentprice.json')).json();
-console.log('entrou')
 dispatch(apiResponse(fetchAPIresponse));
 }
 export default {
