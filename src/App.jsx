@@ -11,6 +11,9 @@ import CounteUp from './components/CounteUp';
 
 function App() {
   const dolar = useSelector((state) => state.userReducer.bpi.USD.rate_float);
+  const pound = useSelector((state) => state.userReducer.bpi.GBP.rate_float);
+  const euro = useSelector((state) => state.userReducer.bpi.EUR.rate_float);
+
   const dispatch = useDispatch();
   // const { countUp } = useCountUp({
   //   end: dolar, redraw: false, duration: 1,
@@ -19,14 +22,16 @@ function App() {
   const [test, setTest] = useState('CRIOU');
   useEffect(() => {
     setInterval(() => dispatch(allActions.userActions.fetchAPI()), 2000);
+    const today = (new Date()).toISOString().substring(0, 10);
+    dispatch(allActions.userActions.chartData(today));
     return clearInterval();
   }, []);
 
   return (
     <>
       <CryptoGif />
-      {dolar > 0 && <CounteUp number={dolar} />}
-      {/* <h1>{dolar}</h1> */}
+      {dolar > 0 && <CounteUp dolar={dolar} pound={pound} euro={euro} />}
+
     </>
   );
 }
