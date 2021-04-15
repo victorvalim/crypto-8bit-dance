@@ -13,19 +13,29 @@ const rotate = keyframes`
 `;
 
 export const CountUpWrapper = styled.div`
-font-size: 80px;
+font-size: 3vw;
 flex-direction: column;
 flex-wrap: nowrap;
 justify-content: flex-start;
 align-items: center;
 display: flex;
   span {
-  margin: 10px;
+    font-family: "Poppins", sans-serif;
+    display:inline-block;
+  margin: 5px;
   color: grey;
   animation : 3s ${rotate} infinite;
 }
 .${(props) => props.money} {
-  font-size: 160px;
+  color:black;
+  font-size: 12vw;
+}
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-size:1vw;
+  margin-botton: 2px;
+  opacity: 0.4;
+  color:grey;
 }
 `;
 

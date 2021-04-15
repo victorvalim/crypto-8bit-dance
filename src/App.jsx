@@ -23,6 +23,7 @@ function App() {
   // });
   // const [color, setColor] = useState('#fcea3f');
   const actualMoney = useSelector((state) => state.userReducer.actualMoney);
+  const time = useSelector((state) => state.userReducer.time);
   const isLoading = useSelector((state) => state.userReducer.isLoading);
   const dolar = useSelector((state) => state.userReducer.bpi.USD.rate_float);
   const pound = useSelector((state) => state.userReducer.bpi.GBP.rate_float);
@@ -68,7 +69,7 @@ function App() {
           <>
             <CountUpWrapper onClick={clickMoney} money={actualMoney}>
               <CryptoGif />
-              <CounteUp dolar={dolar} pound={pound} euro={euro} funct={clickMoney} money={actualMoney} />
+              <CounteUp dolar={dolar} pound={pound} euro={euro} funct={clickMoney} money={actualMoney} time={time} />
             </CountUpWrapper>
             <Chart data={data} size={size} />
           </>
