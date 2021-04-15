@@ -8,6 +8,12 @@ const defaultAction = () => {
   }
 }
 
+const changeLoader = () => {
+  return {
+      type: 'LOADER',
+  }
+}
+
 const apiResponse = (payload) => {
   return {
       type: 'API_RESPONSE',
@@ -20,9 +26,25 @@ const apiResponseForChart = (payload) => {
       payload,
   }
 }
+const currency = (payload) => {
+  return {
+      type: 'CURRENCY',
+      payload,
+  }
+}
 const chartData = (payload) => async (dispatch) => {
-  const fetchAPIresponse = await (await fetch(`https://api.coindesk.com/v1/bpi/historical/close.json?start=2010-07-17&end=${payload}`)).json();
-  dispatch(apiResponseForChart(fetchAPIresponse));
+  const fetchAPIresponse = await (await fetch(`https://api.coindesk.com/v1/bpi/historical/close.json?start=2019-04-15&end=${payload}`)).json();
+  // console.log(fetchAPIresponse);
+  // const newData = fetchAPIresponse.bpi.map((element) => {
+  //   const saveProperty = Object.getOwnPropertyNames(element)
+  //   return { name: saveProperty[0], value: element[saveProperty[0]] }
+  // })
+  const obj = Object.entries(fetchAPIresponse.bpi)
+  const newData = obj.map((element) => ({
+    name: element[0], value: element[1],
+  }))
+  dispatch(apiResponseForChart(newData));
+  dispatch(changeLoader());
   }
 const fetchAPI = () => async (dispatch) => {
 const fetchAPIresponse = await (await fetch('https://api.coindesk.com/v1/bpi/currentprice.json')).json();
@@ -33,5 +55,6 @@ export default {
   apiResponse,
   fetchAPI,
   chartData,
+  currency,
 // eslint-disable-next-line semi
 }
