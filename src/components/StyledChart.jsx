@@ -22,7 +22,6 @@ display: flex;
   span {
     font-family: "Poppins", sans-serif;
     display:inline-block;
-  margin: 5px;
   color: grey;
   animation : 3s ${rotate} infinite;
 }
@@ -34,7 +33,7 @@ h4 {
   font-family: "Poppins", sans-serif;
   font-size:1vw;
   margin-botton: 2px;
-  opacity: 0.4;
+  opacity: 0.3;
   color:grey;
 }
 `;

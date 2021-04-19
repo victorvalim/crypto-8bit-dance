@@ -9,7 +9,7 @@ function Chart({ data, size }) {
   return (
     <LineChart
       width={size}
-      height={270}
+      height={250}
       data={data}
       margin={{
         top: 0, right: 30, left: 20, bottom: 1,
@@ -17,9 +17,9 @@ function Chart({ data, size }) {
     >
       <CartesianGrid strokeDasharray="1 1" />
 
-      <XAxis hide />
+      <XAxis hide dataKey="name" />
       <YAxis />
-      <Tooltip />
+      <Tooltip formatter={(value, name) => [`$${value}`, `${name}`]} />
       <Line dot={false} dataKey="value" stroke="#8884d8" />
 
     </LineChart>
