@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/crypto-8bit-dance/static/css/main.6ed45155.chunk.css",
+    "main.js": "/crypto-8bit-dance/static/js/main.f6e514de.chunk.js",
+    "main.js.map": "/crypto-8bit-dance/static/js/main.f6e514de.chunk.js.map",
+    "runtime-main.js": "/crypto-8bit-dance/static/js/runtime-main.fd614f36.js",
+    "runtime-main.js.map": "/crypto-8bit-dance/static/js/runtime-main.fd614f36.js.map",
+    "static/js/2.e5e21ace.chunk.js": "/crypto-8bit-dance/static/js/2.e5e21ace.chunk.js",
+    "static/js/2.e5e21ace.chunk.js.map": "/crypto-8bit-dance/static/js/2.e5e21ace.chunk.js.map",
+    "static/js/3.24b809a3.chunk.js": "/crypto-8bit-dance/static/js/3.24b809a3.chunk.js",
+    "static/js/3.24b809a3.chunk.js.map": "/crypto-8bit-dance/static/js/3.24b809a3.chunk.js.map",
+    "index.html": "/crypto-8bit-dance/index.html",
+    "static/css/main.6ed45155.chunk.css.map": "/crypto-8bit-dance/static/css/main.6ed45155.chunk.css.map",
+    "static/js/2.e5e21ace.chunk.js.LICENSE.txt": "/crypto-8bit-dance/static/js/2.e5e21ace.chunk.js.LICENSE.txt",
+    "static/media/bitcoin8bit.71082585.gif": "/crypto-8bit-dance/static/media/bitcoin8bit.71082585.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fd614f36.js",
+    "static/js/2.e5e21ace.chunk.js",
+    "static/css/main.6ed45155.chunk.css",
+    "static/js/main.f6e514de.chunk.js"
+  ]
+}
