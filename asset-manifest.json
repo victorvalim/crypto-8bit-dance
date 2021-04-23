@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/crypto-8bit-dance/static/css/main.6ed45155.chunk.css",
-    "main.js": "/crypto-8bit-dance/static/js/main.0085339b.chunk.js",
-    "main.js.map": "/crypto-8bit-dance/static/js/main.0085339b.chunk.js.map",
+    "main.js": "/crypto-8bit-dance/static/js/main.faadfaed.chunk.js",
+    "main.js.map": "/crypto-8bit-dance/static/js/main.faadfaed.chunk.js.map",
     "runtime-main.js": "/crypto-8bit-dance/static/js/runtime-main.fd614f36.js",
     "runtime-main.js.map": "/crypto-8bit-dance/static/js/runtime-main.fd614f36.js.map",
     "static/js/2.e5e21ace.chunk.js": "/crypto-8bit-dance/static/js/2.e5e21ace.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.fd614f36.js",
     "static/js/2.e5e21ace.chunk.js",
     "static/css/main.6ed45155.chunk.css",
-    "static/js/main.0085339b.chunk.js"
+    "static/js/main.faadfaed.chunk.js"
   ]
 }
